@@ -1,12 +1,13 @@
 * {
   box-sizing: border-box;
-  padding-right: 5%;
+  padding-right: 10%;
 }
 
 body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: seashell;
+  background-color: white;
+  color: deeppink;
 }
 
 .header {
@@ -84,6 +85,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: rgba(200, 50, 150, 0.1);
 }
 
 /* .card-front */
@@ -128,6 +130,7 @@ figcaption {
   margin-top: 12%;
   margin-right: 7%;
   padding: 8px 22px;
+  border-radius: 20px 0px 0px 20px;
 
   font-weight: bold;
   line-height: 1.6;
@@ -138,11 +141,11 @@ figcaption {
   position: absolute;
   top: 0;
   right: 12px;
-  background-color: rgb(0, 0, 0, 0.25);
+  background: rgba(0, 0, 0, 0.2);
   color: white;
 }
 .card-front .img-bg {
-  clip-path: polygon(0 20%, 100% 40%, 100% 100%, 0 100%);
+  /* clip-path: polygon(0 20%, 100% 40%, 100% 100%, 0 100%); */
 }
 
 .card-front .img-bg::before {
@@ -163,7 +166,7 @@ figcaption {
 }
 
 .card-back .img-bg {
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 60%);
+  /* clip-path: polygon(0 0, 100% 0, 100% 80%, 0 60%); */
 }
 
 /* hover state */
@@ -175,9 +178,8 @@ figcaption {
 
 .textedit {
   display: block;
-
   width: auto;
-  margin-top: 110%;
+  margin-top: 95%;
   margin-left: 11.5%;
   padding: 8px 22px;
 
@@ -190,7 +192,8 @@ figcaption {
   position: absolute;
   top: 0;
   right: 12px;
-  background-color: rgb(0, 0, 0, 0.7);
+  background: rgba(200, 50, 150, 0.1);
+
   color: white;
   border-radius: 0px 20px 20px 0;
 }
@@ -214,6 +217,6 @@ figcaption {
   position: fixed;
   top: 0;
   right: 12px;
-  background-color: rgb(0, 0, 0, 0.7);
-  color: white;
+  /* background: rgba(200, 50, 150, 0.05); */
+  color: black;
 }
